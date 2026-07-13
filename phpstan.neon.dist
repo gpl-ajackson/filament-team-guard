@@ -52,5 +52,6 @@ parameters:
         - vendor/
         - storage (?)
         - bootstrap/cache (?)
+        - tests/Stubs/
 
     reportUnmatchedIgnoredErrors: false

@@ -4,6 +4,16 @@ All notable changes to `mominalzaraa/filament-team-guard` will be documented in 
 
 This is an enhanced version of [stephenjude/filament-jetstream](https://github.com/stephenjude/filament-jetstream), which itself is inspired by the original [Laravel Jetstream](https://github.com/laravel/jetstream) package.
 
+## v2.1.1 - 2026-07-03
+
+### Fixes
+
+- **`UpdateTeamName` Livewire component** — Team name updates now delegate to the `UpdatesTeamNames` contract instead of calling `$team->update()` directly. Custom published `App\Actions\FilamentJetstream\UpdateTeamName` classes are respected again (reported by [@gpl-ajackson](https://github.com/gpl-ajackson) in [#1](https://github.com/MominAlZaraa/filament-team-guard/pull/1)).
+
+### Tests
+
+- Added **integration and regression tests** for default and custom `UpdatesTeamNames` bindings, plus isolated SQLite test configuration for the package test suite.
+
 ## v2.1.0 - 2026-03-25
 
 ### Summary
