@@ -28,7 +28,7 @@ class PendingTeamInvitations extends BaseLivewireComponent implements Tables\Con
     public function table(Table $table): Table
     {
         return $table
-            ->query(fn () => $this->team->teamInvitations()->latest())
+            ->query(fn () => $this->team->teamInvitations()->latest()->getQuery())
             ->columns([
                 Tables\Columns\Layout\Split::make([
                     Tables\Columns\TextColumn::make('email'),

@@ -4,6 +4,16 @@ All notable changes to `mominalzaraa/filament-team-guard` will be documented in 
 
 This is an enhanced version of [stephenjude/filament-jetstream](https://github.com/stephenjude/filament-jetstream), which itself is inspired by the original [Laravel Jetstream](https://github.com/laravel/jetstream) package.
 
+## Unreleased
+
+### Fixes
+
+- **Table queries return a Builder** — `PendingTeamInvitations`, `ManageApiTokens` and `PasskeyAuthentication` tables now return an Eloquent `Builder` from `->query()` instead of a relation. Filament 5 type-hints `Table::applyQueryScopes(Builder $query)`, so on Filament 5.11 the team settings, API tokens and passkeys pages threw a `TypeError` (5.4 hid it because `getQuery()` clones the relation into a `Builder`).
+
+### Tests
+
+- Added `TableQueryTest`: the pending invitations table's `->query()` closure and `Table::getQuery()` both return a `Builder` scoped to its team. `ManageApiTokens` (Sanctum is not a dev dependency) and `PasskeyAuthentication` are not covered.
+
 ## v2.1.1 - 2026-07-03
 
 ### Fixes

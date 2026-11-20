@@ -22,7 +22,7 @@ class ManageApiTokens extends BaseLivewireComponent implements HasTable
     public function table(Table $table): Table
     {
         return $table
-            ->query(fn () => $this->authUser()->tokens()->latest())
+            ->query(fn () => $this->authUser()->tokens()->latest()->getQuery())
             ->columns([
                 Tables\Columns\Layout\Split::make([
                     Tables\Columns\TextColumn::make('name'),
