@@ -7,6 +7,8 @@
 [![License](https://img.shields.io/packagist/l/mominalzaraa/filament-team-guard?style=flat-square)](https://github.com/MominAlZaraa/filament-team-guard/blob/main/LICENSE.md)
 [![PHP Version](https://img.shields.io/packagist/dependency-v/mominalzaraa/filament-team-guard/php?style=flat-square&logo=php)](https://packagist.org/packages/mominalzaraa/filament-team-guard)
 [![Sponsor](https://img.shields.io/github/sponsors/MominAlZaraa?style=flat-square&logo=github)](https://github.com/sponsors/MominAlZaraa)
+[![Plumb score](https://plumbphp.dev/badges/mominalzaraa/filament-team-guard/composite.svg)](https://plumbphp.dev/mominalzaraa/filament-team-guard)
+[![Plumb security score](https://plumbphp.dev/badges/mominalzaraa/filament-team-guard/security.svg)](https://plumbphp.dev/mominalzaraa/filament-team-guard)
 
 ![Filament Team Guard Banner](https://raw.githubusercontent.com/MominAlZaraa/filament-team-guard/main/.github/plugin-banner.jpg)
 

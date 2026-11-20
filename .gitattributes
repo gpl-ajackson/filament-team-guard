@@ -19,6 +19,7 @@
 /images                 export-ignore
 /tests                  export-ignore
 /package.json           export-ignore
+/composer.lock          export-ignore
 /phpstan-baseline.neon  export-ignore
 /phpstan.neon.dist      export-ignore
 /postcss.config.js      export-ignore
@@ -29,3 +30,9 @@
 /tailwind.config.js     export-ignore
 /testbench.yaml         export-ignore
 /UPGRADING.md           export-ignore
+/CHANGELOG.md           export-ignore
+
+/.claude                export-ignore
+/.cursor                export-ignore
+/AGENTS.md              export-ignore
+/.mcp.json              export-ignore

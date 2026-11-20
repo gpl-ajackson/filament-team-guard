@@ -12,3 +12,6 @@ phpunit.xml
 phpstan.neon
 testbench.yaml
 vendor/
+
+# graft's local graph cache — regenerable, not committed (run `graft build`).
+graft/
